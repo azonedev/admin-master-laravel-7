@@ -11,17 +11,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function(){
     return view('welcome');
 });
-Route::get('/admin','admin\AdminController@index');
+
 
 // --------------
 // Admin
 // --------------
 
-// Route::group(['prefix'=>'admin', 'middleware' =>'role'],function (){
+Route::group(['prefix'=>'admin', 'middleware' =>'AdminAction'],function (){
 
-//     Route::get('/',"admin\Admin@index");
+    Route::get('/',"admin\AdminController@index");
 
-// });
+});
 
 // --------------
 // User
@@ -29,16 +29,16 @@ Route::get('/admin','admin\AdminController@index');
 
 // user login & reg
 
-// Route::get('/register',"user\GeneralUser@index");
-// Route::post('/register/save',"user\GeneralUser@store");
+// Route::get('/register',"user\UserController@index");
+// Route::post('/register/save',"user\UserController@store");
 
-// Route::get('/login/{url?}',"user\GeneralUser@showLogin");
-// Route::post('/login/match',"user\GeneralUser@matchLogin");
-// Route::get('/logout',"user\GeneralUser@logout");
+// Route::get('/login/{url?}',"user\UserController@showLogin");
+// Route::post('/login/match',"user\UserController@matchLogin");
+// Route::get('/logout',"user\UserController@logout");
                                                                                         
 // all-user-action
 
-// Route::group(['prefix' => 'user','middleware' =>'useraction'], function () {
+Route::group(['prefix' => 'user','middleware' =>'UserAction'], function () {
 
-// });
+});
 

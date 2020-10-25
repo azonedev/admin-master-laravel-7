@@ -73,30 +73,6 @@
                     <li>
                         <a href="{{url('/admin')}}" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
-                    <li>
-                        <a href="{{url('admin/category')}}"><i class="fa fa-list"></i> Category</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#"><i class="fa fa-arrow-right"></i> AD  <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{{url('admin/add-to-paid')}}"><i class="fa fa-plus"></i> Add to paid</a>
-                            </li>
-                            <li>
-                                <a href="{{url('admin/paid-ads')}}"><i class="fa fa-money"></i> Paid ads </a>
-                            </li>
-                            <li>
-                                <a href="{{url('admin/active-ads')}}"><i class="fa fa-toggle-on"></i> Active ads </a>
-                            </li>
-                            <li>
-                                <a href="{{url('admin/deactivated-ads')}}"><i class="fa fa-power-off"></i> Deactivated ads </a>
-                            </li>
-                            <li>
-                                <a href="{{url('admin/all-ads')}}"><i class="fa fa-list"></i> All ads </a>
-                            </li>
-                        </ul>
-                    </li>
                     
                     <li>
                         <a href="#"><i class="fa fa-envelope"></i> Messages <span class="fa arrow"></span></a>
@@ -147,7 +123,7 @@
                     </li>
 
 
-                    {{-- <li>
+                    <li>
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -162,7 +138,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li> --}}
+                    </li>
                 </ul>
 
             </div>
