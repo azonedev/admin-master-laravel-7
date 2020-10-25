@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Admin master for laravel - 7
+                   Admin master for laravel - 7
                 </div>
 
                 <div class="links">
